@@ -6,11 +6,13 @@ namespace Creational.Patterns
     {
         static void Main(string[] args)
         {
-            //DisplayFactoryMethod();
+            DisplayFactoryMethod();
 
-            //DisplayAbtractFactory();
+            DisplayAbtractFactory();
 
-            //DisplayBuidler();
+            DisplayBuidler();
+
+            DisplayPrototype();
 
             Console.ReadKey();
         }
@@ -28,6 +30,11 @@ namespace Creational.Patterns
         static void DisplayBuidler()
         {
             new BuilderPattern().Run();
+        }
+
+        static void DisplayPrototype()
+        {
+            new Prototype().Run();
         }
     }
 }
